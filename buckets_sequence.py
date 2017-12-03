@@ -30,9 +30,11 @@
 
 #理解错了，我以为是随便输入四个数，给它们排序
 
-from sys import argv
+#桶排序
 
-script,one,two,three,four = argv
+# from sys import argv
+
+# script,one,two,three,four = argv
 
 lst = [0,0,0,0,0,0,0,0,0,0,0]
 
@@ -41,29 +43,31 @@ lst = [0,0,0,0,0,0,0,0,0,0,0]
 # for i in range(1001):
 # 	list1.append(i)
 
-one = int(one)
-two = int(two)
-three = int(three)
-four = int(four)
 
 a = []
 
-for i in one,two,three,four:
-	lst[i] += 1
-for index,l in enumerate(lst):
-	if l > 0:
-		for i in range(l):
-			print(index)
-			a.append(index)
+def buckets(one,two,three,four):
+	one = int(one)
+	two = int(two)
+	three = int(three)
+	four = int(four)
+	for i in one,two,three,four:
+		lst[i] += 1
+	for index,l in enumerate(lst):
+		if l > 0:
+			for i in range(l):
+				# print(index)
+				a.append(index)
+	return a
 
 #从大到小排列
 
 #1 reversed()函数
-b =list(reversed(a))
-print(b)
-#2 sorted()函数
-c = sorted(a,key=None,reverse=True)
-print(c)
-#3
-d = a[::-1]
-print(d)
+# b =list(reversed(a))
+# print(b)
+# #2 sorted()函数
+# c = sorted(a,key=None,reverse=True)
+# print(c)
+# #3
+# d = a[::-1]
+# print(d)
