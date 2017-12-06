@@ -43,3 +43,11 @@ arr=[6,1,2,7,9,3,4,5,10,8]
 print("initial array:\n",arr)
 QuickSort(arr,0,len(arr)-1)
 print("result array:\n",arr)
+
+# a = input("> ")
+# list1 = a.split()
+
+# def quicksort(firstIndex,lastIndex):
+#     basis = list1[0]
+#     for i in range(firstIndex,lastIndex):
+#     
