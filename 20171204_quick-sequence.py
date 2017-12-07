@@ -30,11 +30,16 @@ def QuickSort(arr,firstIndex,lastIndex):
  
 def Partition(arr,firstIndex,lastIndex):
     i=firstIndex-1
+    print(i)
     for j in range(firstIndex,lastIndex):
         if arr[j]<=arr[lastIndex]:
+            print(j)
             i=i+1
+            print(i)
             arr[i],arr[j]=arr[j],arr[i]
+            print(arr)
     arr[i+1],arr[lastIndex]=arr[lastIndex],arr[i+1]
+    print(arr)
     return i
  
  
