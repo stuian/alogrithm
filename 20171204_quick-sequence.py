@@ -30,16 +30,12 @@ def QuickSort(arr,firstIndex,lastIndex):
  
 def Partition(arr,firstIndex,lastIndex):
     i=firstIndex-1
-    print(i)
     for j in range(firstIndex,lastIndex):
         if arr[j]<=arr[lastIndex]:
-            print(j)
             i=i+1
-            print(i)
             arr[i],arr[j]=arr[j],arr[i]
-            print(arr)
     arr[i+1],arr[lastIndex]=arr[lastIndex],arr[i+1]
-    print(arr)
+    print(i)
     return i
  
  
@@ -51,8 +47,24 @@ print("result array:\n",arr)
 
 # a = input("> ")
 # list1 = a.split()
+# # list1 = list(map(int, list1))
+# list2= list1[::-1]
+# b = sorted(list1)
 
-# def quicksort(firstIndex,lastIndex):
-#     basis = list1[0]
-#     for i in range(firstIndex,lastIndex):
-#     
+#while firstindex < lastindex
+# while list1 != b:
+#     for (i,j) in zip(list1,list2):
+#         i = int(i)
+#         j = int(j)
+#         print(i)
+#         print(j)
+#         if list1[i]<list1[0] and list2[j]>list1[0]:
+#             print(i)
+#             print(j)
+#             c = list1[i]
+#             list1 = list2[j]
+#             list2[j] = c
+#         elif list1[i] == list2[j]:
+#             list1[0] = list1[i]
+
+# print(list1)
