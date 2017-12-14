@@ -45,26 +45,22 @@ print("initial array:\n",arr)
 QuickSort(arr,0,len(arr)-1)
 print("result array:\n",arr)
 
-# a = input("> ")
-# list1 = a.split()
-# # list1 = list(map(int, list1))
-# list2= list1[::-1]
-# b = sorted(list1)
-
-#while firstindex < lastindex
-# while list1 != b:
-#     for (i,j) in zip(list1,list2):
-#         i = int(i)
-#         j = int(j)
-#         print(i)
-#         print(j)
-#         if list1[i]<list1[0] and list2[j]>list1[0]:
-#             print(i)
-#             print(j)
-#             c = list1[i]
-#             list1 = list2[j]
-#             list2[j] = c
-#         elif list1[i] == list2[j]:
-#             list1[0] = list1[i]
-
-# print(list1)
+#一、 算法描述：
+1．先从数列中取出一个数作为基准数。
+2．分区过程，将比这个数大的数全放到它的右边，小于或等于它的数全放到它的左边。
+3．再对左右区间重复第二步，直到各区间只有一个数
+#-*- coding: utf-8 -*-
+Def sub_sort(a):
+Key = lst[head]
+While head<tail:
+if lst[tail]>key:
+tail -= 1
+	elif lst[tail]<key:
+		if lst[head]>key:
+			c = lst[head] 
+			lst[head] = lst[tail]
+			lst[tail] = c
+	tail -= 1
+	head += 1
+		else:
+			head += 1
